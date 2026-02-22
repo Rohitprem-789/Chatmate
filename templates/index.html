@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat-Mate</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">CHAT-Mate</h1>
+
+    <p class="user-info">Logged in as: <strong>{{ user }}</strong></p>
+    <a href="/logout" class="logout-btn">Logout</a>
+
+    <div id="messages" class="chat-box"></div>
+
+    <div class="input-area">
+        <input type="text" id="msg" placeholder="Type message...">
+        <button class="send-btn" onclick="sendMessage()">
+            <svg viewBox="0 0 24 24" class="send-icon">
+                <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
+            </svg>
+        </button>  
+        <button id="recordBtn" onclick="startRecording()">🎤</button>
+
+    </div>
+
+</div>
+
+<script>
+const username = "{{ user }}";
+</script>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

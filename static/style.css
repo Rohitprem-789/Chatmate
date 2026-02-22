@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #111111);
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 420px;
+    margin: 40px auto;
+    background: #0d0d0d;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.35);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 36px;
+    color: #ff2b2b;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #bbb;
+    margin-bottom: 12px;
+}
+
+/* Logged user */
+.user-info {
+    text-align: center;
+    color: #ddd;
+    font-size: 14px;
+}
+
+/* Logout button */
+.logout-btn {
+    display: block;
+    width: fit-content;
+    margin: 8px auto 12px auto;
+    padding: 6px 14px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid #ff2b2b;
+    transition: 0.25s;
+}
+
+.logout-btn:hover {
+    background: #ff2b2b;
+    color: white;
+}
+
+/* Audio player container */
+audio {
+    width: 100%;
+    margin: 6px 0 10px 0;
+    border-radius: 8px;
+    background: #0b0b0b;
+    outline: none;
+}
+
+/* Chrome / Edge controls styling */
+audio::-webkit-media-controls-panel {
+    background-color: #0b0b0b;
+}
+
+audio::-webkit-media-controls-play-button {
+    filter: invert(1);
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+}
+
+audio::-webkit-media-controls-timeline {
+    filter: hue-rotate(330deg) saturate(2);
+}
+
+audio::-webkit-media-controls-volume-slider {
+    filter: hue-rotate(330deg) saturate(2);
+}
+.audio-bubble {
+    background: rgba(255, 43, 43, 0.15);
+    border-left: 3px solid #ff2b2b;
+    padding: 6px;
+    border-radius: 6px;
+    margin: 6px 0;
+}
+/* Inputs */
+input {
+    width: 90%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #222;
+    outline: none;
+    background: #050505;
+    color: white;
+    font-size: 15px;
+}
+
+/* Chat Box */
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background: #050505;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Messages */
+.chat-box p {
+    margin: 6px 0;
+    padding: 8px 12px;
+    background: rgba(255, 43, 43, 0.15);
+    border-left: 3px solid #ff2b2b;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Input area */
+.input-area {
+    display: flex;
+    gap: 8px;
+}
+
+/* Buttons */
+button {
+    background: #ff2b2b;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #ff4d4d;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.send-btn {
+    background: #ff2b2b;
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.send-btn:hover {
+    background: #ff4d4d;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+.send-icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
