@@ -1,0 +1,9 @@
+Flask
+flask-login
+flask-sqlalchemy
+werkzeug
+<<<<<<< HEAD
+gunicorn
+=======
+gunicorn
+>>>>>>> aefc20d (Added dependencies)
